@@ -8,7 +8,7 @@
 #    (если ключ App Store Connect уже называется иначе — подставьте это имя
 #    и в integrations.app_store_connect ниже)
 # 2. iOS provisioning profiles → Fetch profiles → App Store
-#    для com.jokerstrap.jokersapp98
+#    для com.jokerstrap.jokersapp
 # Если Apple пишет, что Distribution-сертификатов уже 3:
 # https://developer.apple.com/account/resources/certificates/list
 
@@ -22,9 +22,9 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.jokerstrap.jokersapp98
+        bundle_identifier: com.jokerstrap.jokersapp
       vars:
-        BUNDLE_ID: com.jokerstrap.jokersapp98
+        BUNDLE_ID: com.jokerstrap.jokersapp
         XCODE_WORKSPACE: ios/Runner.xcworkspace
         XCODE_SCHEME: Runner
       flutter: stable
